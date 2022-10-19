@@ -13,13 +13,13 @@ class BootstrapTestDatabase extends Migration
      */
     public function up()
     {
-        Schema::create('events', function($table) {
+        Schema::create('events', function ($table) {
             $table->increments('id');
             $table->string('name');
             $table->timestamps();
         });
 
-        Schema::create('workshops', function($table) {
+        Schema::create('workshops', function ($table) {
             $table->increments('id');
             $table->dateTime('start');
             $table->dateTime('end');
@@ -29,7 +29,7 @@ class BootstrapTestDatabase extends Migration
             $table->timestamps();
         });
 
-        Schema::create('menu_items', function($table) {
+        Schema::create('menu_items', function ($table) {
             $table->increments('id');
             $table->string('name');
             $table->string('url');
